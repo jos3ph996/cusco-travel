@@ -1,0 +1,45 @@
+/* Estilos propios de CUSCO TRAVEL (se cargan después de style.css) */
+
+/* Valores */
+.value-item .value-icon { width: 80px; height: 80px; }
+
+/* Tarjetas de servicio / tour */
+.offer-card { border: 1px solid #eee; transition: box-shadow .3s, transform .3s; height: 100%; }
+.offer-card:hover { box-shadow: 0 10px 30px rgba(0,0,0,.12); transform: translateY(-4px); }
+.offer-card img { height: 220px; object-fit: cover; width: 100%; }
+.price-tag { font-size: 1.6rem; font-weight: 700; }
+
+/* Flota */
+.fleet-card img { height: 190px; object-fit: cover; width: 100%; }
+
+/* Tablas de tarifas */
+.rates-table th { background: #1a1a2e; color: #fff; text-align: center; vertical-align: middle; font-weight: 600; }
+.rates-table th:first-child { text-align: left; }
+.rates-table td { vertical-align: middle; }
+.rates-table tbody tr:hover { background: rgba(0,0,0,.03); }
+
+@media (max-width: 767.98px) {
+  .rates-table thead { display: none; }
+  .rates-table, .rates-table tbody, .rates-table tr, .rates-table td { display: block; width: 100%; }
+  .rates-table tr { border: 1px solid #dee2e6; margin-bottom: 14px; padding: 8px 0; background: #fff; }
+  .rates-table td { border: 0 !important; text-align: right !important; padding: 6px 14px; }
+  .rates-table td::before { content: attr(data-label); float: left; font-weight: 600; color: #666; }
+  .rates-table td:first-child { text-align: left !important; }
+  .rates-table td:first-child::before { content: none; }
+  .rates-table td:last-child { text-align: center !important; }
+  .rates-table td:last-child::before { content: none; }
+}
+
+/* FAQ */
+.faq .card { border: 0; border-bottom: 1px solid #eee; }
+.faq .card-header { background: #fff; padding: 0; border: 0; }
+.faq .btn-link { width: 100%; text-align: left; padding: 18px 8px; color: #1a1a2e; font-weight: 600; text-decoration: none; }
+.faq .btn-link:after { content: "\f067"; font-family: "Font Awesome 5 Free"; font-weight: 900; float: right; font-size: .8rem; }
+.faq .btn-link:not(.collapsed):after { content: "\f068"; }
+
+/* Botón flotante de WhatsApp */
+.wa-float { position: fixed; left: 20px; bottom: 20px; z-index: 1000; display: flex; align-items: center; }
+.wa-float .wa-bubble { background: #fff; color: #333; border-radius: 20px; padding: 8px 14px; margin-left: 10px; box-shadow: 0 4px 14px rgba(0,0,0,.2); font-size: .9rem; white-space: nowrap; }
+.wa-float .wa-btn { width: 58px; height: 58px; border-radius: 50%; background: #25d366; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 14px rgba(0,0,0,.3); }
+.wa-float .wa-btn:hover { background: #1ebe57; color: #fff; text-decoration: none; }
+@media (max-width: 575.98px) { .wa-float .wa-bubble { display: none; } }
